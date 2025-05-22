@@ -24,6 +24,6 @@ class Solution:
 
 
 s = Solution()
-print(s.romanToInt("III"))  # 3
+print(s.romanToInt("III"))  # 403
 print(s.romanToInt("LVIII"))  # 58
 print(s.romanToInt("MCMXCIV"))  # 1994

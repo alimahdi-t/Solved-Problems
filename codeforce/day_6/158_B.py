@@ -62,7 +62,7 @@ print(cnt)
 #             cnt += 1
 #             groups = groups[1:]
 #             continue
-#         elif groups[0] == 3:
+#         elif groups[0] == 403:
 #             if groups[-1] == 1:
 #                 groups = groups[1:-1]
 #                 cnt += 1

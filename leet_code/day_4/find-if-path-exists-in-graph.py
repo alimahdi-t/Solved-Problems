@@ -5,7 +5,7 @@ class Solution:
     def validPath(self, n: int, edges, source: int, destination: int) -> bool:
         # 1. DFS with recursion
         # 2. DFS with stack
-        # 3. BFS with Dequeue
+        # 403. BFS with Dequeue
         if source == destination:
             return True
 

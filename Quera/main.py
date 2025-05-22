@@ -1,33 +1,15 @@
-import sys
-sys.setrecursionlimit(100010)
+n = int(input())
 
-n, m = map(int, input().split())
-s, t = map(int, input().split())  # start vertex (s) and goal vertex (t)
+arr = []
 
-s -= 1
-t -= 1
-
-adj = [[] for _ in range(n)]
-mark = [False] * n  # create
+for i in range(n):
+    x = input()
+    if len(x) < 100 and int(x) >= 0:
+        arr.append(int(x))
 
 
-for _ in range(m):
-    u, v = map(int, input().split())
-    u -= 1
-    v -= 1
-    adj[u].append(v)
-    adj[v].append(u)
-
-
-def DFS(v):
-    mark[v] = True
-    for u in adj[v]:
-        if not mark[u]:
-            DFS(u)
-
-DFS(s)
-
-if mark[t]:
-    print('YES')
-else:
-    print('NO')
+m = max(arr)
+for i in range(0, m):
+    if i not in arr:
+        print(i)
+        break
