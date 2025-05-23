@@ -1,12 +1,7 @@
-# AND  &
-# OR  |
-# NOT  ~
-# XOR  ^
-# LEFT-SHIFT  <<
-# RIGHT-SHIFT  >>
+import sys
 
-a = 1111
-b = 1110
-c = 6
-d = 2
-print(a ^ b)
+input = sys.stdin.readline()
+sys.set_int_max_str_digits(10 ** 6)
+sys.setrecursionlimit(100000)
+INF = float("inf")
+print(f"{x:.10f}")
